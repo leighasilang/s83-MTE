@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S83 - MTE Static</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+
+    </head>
+
+    <body>
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top custom-navbar shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-feather me-1 brand-accent"></i>Scents <span class="brand-accent">&amp;</span> Scripts
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Center Navigation Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#highlights">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+
+                <!--  Search | Cart | Login -->
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
+                    <form class="d-flex" role="search">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control" type="search" placeholder="Search scents, pens..." aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-sm btn-outline-dark position-relative">
+                        <i class="bi bi-bag"></i> Cart
+                    </a>
+                    <a href="#" class="btn btn-sm btn-primary-custom">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (id="hero") -->
+    <header id="hero" class="hero-section d-flex align-items-center text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <span class="badge rounded-pill badge-soft mb-3 px-3 py-2">Apothecary &amp; Stationery</span>
+                    <h1 class="display-4 fw-bold mb-3 serif-heading">Scent Your Story, Seal Your Thoughts</h1>
+                    <p class="lead text-muted mb-4">
+                        Long-lasting oil-based perfumes, hand-poured soy candles, fine journaling pens, and artisan sealing wax crafted for your desk rituals.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#featured" class="btn btn-primary-custom btn-lg px-4">Shop Collection</a>
+                        <a href="#highlights" class="btn btn-outline-dark btn-lg px-4">Explore Desk Sets</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=800&q=80" alt="Oil Perfume and Journaling Flatlay" class="img-fluid rounded-3 shadow-lg hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CAROUSEL SECTION -->
+    <section id="highlights" class="py-5 bg-parchment-alt">
+        <div class="container">
+            <div id="promoCarousel" class="carousel slide rounded-3 overflow-hidden shadow-sm" data-bs-ride="carousel">
+                <!-- Indicators (• • •) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Carousel Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-banner slide-1 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                            <h2 class="fw-bold text-white serif-heading">High-Concentration Oil Perfumes</h2>
+                            <p class="mb-3 text-white">Alcohol-free roll-ons and dropper blends in warm vanilla, amber, and woodsy floral notes.</p>
+                            <a href="#featured" class="btn btn-light btn-sm fw-semibold px-3">Browse Perfumes</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-banner slide-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                            <h2 class="fw-bold text-white serif-heading">The Midnight Writer's Bundle</h2>
+                            <p class="mb-3 text-white">Pair a crackling wood-wick candle with brass wax stamps and fine-nib fountain pens.</p>
+                            <a href="#featured" class="btn btn-light btn-sm fw-semibold px-3">Shop Stationery</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-banner slide-3 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                            <h2 class="fw-bold text-white serif-heading">Custom Wax Seal &amp; Scent Sets</h2>
+                            <p class="mb-3 text-white">Free shipping nationwide on curated gift boxes over ₱1,500.</p>
+                            <a href="#featured" class="btn btn-light btn-sm fw-semibold px-3">Build a Box</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left & Right Arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADING & CARDS -->
+    <main id="featured" class="py-5">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-heading serif-heading">Apothecary &amp; Desk Favorites</h2>
+                <p class="text-muted">Small-batch oil fragrances, candles, and heirloom writing tools</p>
+            </div>
+
+            <!-- 4 Product Cards Grid -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                <!-- Card 1: Oil Perfume -->
+                <div class="col">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Velvet Santal Perfume Oil">
+                        <div class="card-body d-flex flex-column">
+                            <span class="small text-uppercase text-muted mb-1">Oil-Based Perfume</span>
+                            <h5 class="card-title fw-bold">Velvet Santal &amp; Vanilla Oil</h5>
+                            <p class="card-text price-text fw-semibold mb-3">₱380.00</p>
+                            <button class="btn btn-primary-custom mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Scented Candle -->
+                <div class="col">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Old Books & Amber Soy Candle">
+                        <div class="card-body d-flex flex-column">
+                            <span class="small text-uppercase text-muted mb-1">Scented Candle</span>
+                            <h5 class="card-title fw-bold">Old Library &amp; Amber Candle</h5>
+                            <p class="card-text price-text fw-semibold mb-3">₱450.00</p>
+                            <button class="btn btn-primary-custom mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Journaling Pen -->
+                <div class="col">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Brass Fine-Nib Journaling Pen">
+                        <div class="card-body d-flex flex-column">
+                            <span class="small text-uppercase text-muted mb-1">Journaling Pen</span>
+                            <h5 class="card-title fw-bold">Heirloom Brass Fountain Pen</h5>
+                            <p class="card-text price-text fw-semibold mb-3">₱520.00</p>
+                            <button class="btn btn-primary-custom mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Wax Seal Kit -->
+                <div class="col">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Botanical Sealing Wax & Stamp Kit">
+                        <div class="card-body d-flex flex-column">
+                            <span class="small text-uppercase text-muted mb-1">Journaling Wax</span>
+                            <h5 class="card-title fw-bold">Botanical Sealing Wax Kit</h5>
+                            <p class="card-text price-text fw-semibold mb-3">₱399.00</p>
+                            <button class="btn btn-primary-custom mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER: Links | Links | Links | Copyright -->
+    <footer id="footer" class="custom-footer py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Column 1: Links -->
+                <div class="col-6 col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3">Apothecary</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#featured" class="footer-link">Oil-Based Perfumes</a></li>
+                        <li class="mb-2"><a href="#featured" class="footer-link">Soy Scented Candles</a></li>
+                        <li class="mb-2"><a href="#highlights" class="footer-link">Scent Discovery Sets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Links -->
+                <div class="col-6 col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3">Scriptorium</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#featured" class="footer-link">Fountain &amp; Gel Pens</a></li>
+                        <li class="mb-2"><a href="#featured" class="footer-link">Sealing Wax &amp; Stamps</a></li>
+                        <li class="mb-2"><a href="#highlights" class="footer-link">Journaling Bundles</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Links -->
+                <div class="col-6 col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#footer" class="footer-link">Shipping &amp; Care Guide</a></li>
+                        <li class="mb-2"><a href="#footer" class="footer-link">Track Order</a></li>
+                        <li class="mb-2"><a href="#footer" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Copyright -->
+                <div class="col-6 col-md-3 d-flex flex-column justify-content-between">
+                    <div>
+                        <h6 class="fw-bold text-uppercase mb-3">Scents &amp; Scripts</h6>
+                        <p class="small text-muted">Handcrafted oil perfumes, candles, and fine stationery for mindful daily rituals.</p>
+                    </div>
+                    <p class="small text-muted mb-0">Copyright &copy; 2022 Scents &amp; Scripts. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
