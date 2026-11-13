@@ -4,7 +4,7 @@ A mobile-responsive static e-commerce homepage built for the Zuitt Coding Bootca
 
 ## 🚀 Live Demo
 You can view the live deployed application here:  
-👉 
+👉 [https://leighasilang.github.io/s83-MTE/]
 
 ---
 
